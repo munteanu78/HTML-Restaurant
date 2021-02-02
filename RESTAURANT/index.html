@@ -54,7 +54,7 @@
               <h3>  Your Address </h3>
                   <br> 
               <select name="street" required  > 
-                  <option >Chose Street</option>
+                  <option  >Chose Street</option>
                   <option >Bulevardul Constantin Negruzzi	</option>
                   <option >Bulevardul Dacia	</option>
                   <option > Bulevardul Decebal6</option>
@@ -82,7 +82,9 @@
                   <label >home No <input type="number" name="homeNo" required></label>                  
                   <label >apart No <input type="number" name="apartNo"></label>
                     <br> <br>
-                  <label >Deliver at  <label >AM/PM <select name="delivery" required><option value="8:00 AM"></option>
+                  <label >Deliver at AM/PM
+                     <select name="delivery" required>
+             <optgroup label="AM"> 
                 <option >8:00 AM</option>
                 <option >8:30 AM</option>
                 <option >9:00 AM</option>
@@ -92,12 +94,15 @@
                 <option >11:00 AM</option>
                 <option >11:30 AM</option>
                 <option >12:30 AM</option>
+            </optgroup>
+            <optgroup label="PM">
                 <option >14:00 PM</option>
                 <option >14:30 PM</option>
                 <option >15:30 PM</option>
                 <option >15:30 PM</option>
                 <option >16:00 PM</option>
                 <option >16:30 PM</option>
+            </optgroup>
                 </select></label>
                        
              
